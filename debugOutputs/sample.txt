@@ -1,0 +1,355 @@
+numArchRegs=32
+numPhysicalRegs=64
+robEntries=128
+width=16
+numLSQEntries=16
+0 L 4 80 2
+1 L 5 64 3
+2 R 3 2 2
+3 S 29 24 2
+4 I 8 0 1
+5 R 1 6 6
+6 R 1 7 7
+7 L 6 0 4
+8 L 7 0 5
+9 L 4 80 2
+10 L 5 64 3
+11 R 3 2 2
+12 S 29 24 2
+Cycle #0: fetch   	[inst 0:	L [AR#4] #80 -> AR#2]
+Cycle #0: fetch   	[inst 1:	L [AR#5] #64 -> AR#3]
+Cycle #0: fetch   	[inst 2:	R [AR#3 AR#2] -> AR#2]
+Cycle #0: fetch   	[inst 3:	S [AR#29 AR#2] #24]
+Cycle #0: fetch   	[inst 4:	I [AR#8] #0 -> AR#1]
+Cycle #0: fetch   	[inst 5:	R [AR#1 AR#6] -> AR#6]
+Cycle #0: fetch   	[inst 6:	R [AR#1 AR#7] -> AR#7]
+Cycle #0: fetch   	[inst 7:	L [AR#6] #0 -> AR#4]
+Cycle #0: fetch   	[inst 8:	L [AR#7] #0 -> AR#5]
+Cycle #0: fetch   	[inst 9:	L [AR#4] #80 -> AR#2]
+Cycle #0: fetch   	[inst 10:	L [AR#5] #64 -> AR#3]
+Cycle #0: fetch   	[inst 11:	R [AR#3 AR#2] -> AR#2]
+Cycle #0: fetch   	[inst 12:	S [AR#29 AR#2] #24]
+[ROB: h=0 t=0 ]
+Reservation Stations : [
+	[ALU busy=0 ]
+	[ALU busy=0 ]
+	[LOAD busy=0 ]
+	[STORE busy=0 ]
+]
+[Mapping Table:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#2+
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[archMapTable:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#2+
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[FreeList 32+ 33+ 34+ 35+ 36+ 37+ 38+ 39+ 40+ 41+ 42+ 43+ 44+ 45+ 46+ 47+ 48+ 49+ 50+ 51+ 52+ 53+ 54+ 55+ 56+ 57+ 58+ 59+ 60+ 61+ 62+ 63+ ]
+
+Cycle #1: decode  	[inst 0:	L [AR#4] #80 -> AR#2]
+Cycle #1: decode  	[inst 1:	L [AR#5] #64 -> AR#3]
+Cycle #1: decode  	[inst 2:	R [AR#3 AR#2] -> AR#2]
+Cycle #1: decode  	[inst 3:	S [AR#29 AR#2] #24]
+Cycle #1: decode  	[inst 4:	I [AR#8] #0 -> AR#1]
+Cycle #1: decode  	[inst 5:	R [AR#1 AR#6] -> AR#6]
+Cycle #1: decode  	[inst 6:	R [AR#1 AR#7] -> AR#7]
+Cycle #1: decode  	[inst 7:	L [AR#6] #0 -> AR#4]
+Cycle #1: decode  	[inst 8:	L [AR#7] #0 -> AR#5]
+Cycle #1: decode  	[inst 9:	L [AR#4] #80 -> AR#2]
+Cycle #1: decode  	[inst 10:	L [AR#5] #64 -> AR#3]
+Cycle #1: decode  	[inst 11:	R [AR#3 AR#2] -> AR#2]
+Cycle #1: decode  	[inst 12:	S [AR#29 AR#2] #24]
+[ROB: h=0 t=0 ]
+Reservation Stations : [
+	[ALU busy=0 ]
+	[ALU busy=0 ]
+	[LOAD busy=0 ]
+	[STORE busy=0 ]
+]
+[Mapping Table:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#2+
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[archMapTable:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#2+
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[FreeList 32+ 33+ 34+ 35+ 36+ 37+ 38+ 39+ 40+ 41+ 42+ 43+ 44+ 45+ 46+ 47+ 48+ 49+ 50+ 51+ 52+ 53+ 54+ 55+ 56+ 57+ 58+ 59+ 60+ 61+ 62+ 63+ ]
+
+Cycle #2: dispatch	[inst 0:	L [AR#4] #80 -> AR#2] ->	[inst 0:	L [PR#4+] #80 -> PR#32 ]
+[ROB: h=0 t=1 
+	[[inst 0:	L [PR#4+] #80 -> PR#32 ] T=32  Told=2+]]
+Reservation Stations : [
+	[ALU busy=0 ]
+	[ALU busy=0 ]
+	[LOAD busy=1 [inst 0:	L [PR#4+] #80 -> PR#32 ]]
+	[STORE busy=0 ]
+]
+[Mapping Table:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#32
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[archMapTable:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#2+
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[FreeList 33+ 34+ 35+ 36+ 37+ 38+ 39+ 40+ 41+ 42+ 43+ 44+ 45+ 46+ 47+ 48+ 49+ 50+ 51+ 52+ 53+ 54+ 55+ 56+ 57+ 58+ 59+ 60+ 61+ 62+ 63+ ]
+
+[ROB: h=0 t=1 
+	[[inst 0:	L [PR#4+] #80 -> PR#32 ] T=32  Told=2+]]
+Reservation Stations : [
+	[ALU busy=0 ]
+	[ALU busy=0 ]
+	[LOAD busy=1 [inst 0:	L [PR#4+] #80 -> PR#32 ]]
+	[STORE busy=0 ]
+]
+[Mapping Table:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#32
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[archMapTable:
+	AR#0->PR#0+
+	AR#1->PR#1+
+	AR#2->PR#2+
+	AR#3->PR#3+
+	AR#4->PR#4+
+	AR#5->PR#5+
+	AR#6->PR#6+
+	AR#7->PR#7+
+	AR#8->PR#8+
+	AR#9->PR#9+
+	AR#10->PR#10+
+	AR#11->PR#11+
+	AR#12->PR#12+
+	AR#13->PR#13+
+	AR#14->PR#14+
+	AR#15->PR#15+
+	AR#16->PR#16+
+	AR#17->PR#17+
+	AR#18->PR#18+
+	AR#19->PR#19+
+	AR#20->PR#20+
+	AR#21->PR#21+
+	AR#22->PR#22+
+	AR#23->PR#23+
+	AR#24->PR#24+
+	AR#25->PR#25+
+	AR#26->PR#26+
+	AR#27->PR#27+
+	AR#28->PR#28+
+	AR#29->PR#29+
+	AR#30->PR#30+
+	AR#31->PR#31+
+]
+[FreeList 33+ 34+ 35+ 36+ 37+ 38+ 39+ 40+ 41+ 42+ 43+ 44+ 45+ 46+ 47+ 48+ 49+ 50+ 51+ 52+ 53+ 54+ 55+ 56+ 57+ 58+ 59+ 60+ 61+ 62+ 63+ ]
+
